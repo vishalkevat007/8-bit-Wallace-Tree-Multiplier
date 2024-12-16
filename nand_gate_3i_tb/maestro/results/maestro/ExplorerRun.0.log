@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Nov 17 12:40:49 2024 
+Best design point: 1
+Design specs: 
+	Project_nand_gate_3i_tb_1	corner	Nominal - 
+	tphl_C_rises_Out_falls		41.15p
+	tplh_C_falls_Out_rises		41.24p
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Sun Nov 17 12:41:04 2024 

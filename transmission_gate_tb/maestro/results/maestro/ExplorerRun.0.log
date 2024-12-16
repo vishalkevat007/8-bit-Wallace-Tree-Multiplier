@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Nov 17 21:36:18 2024 
+Best design point: 1
+Design specs: 
+	Project_transmission_gate_tb_1	corner	Nominal - 
+	delay(?wf1 VT("/In") ?value1 0.55 ?edge1 "rising" ?nth1 1 ?td1 0.0 ?tol1 nil ?wf2 VT("/Out") ?value2 0.55 ?edge2 "rising" ?nth2 1 ?tol2 nil ?td2 nil ?stop nil ?multiple nil)		16.79p
+	delay(?wf1 VT("/In") ?value1 0.55 ?edge1 "falling" ?nth1 1 ?td1 0.0 ?tol1 nil ?wf2 VT("/Out") ?value2 0.55 ?edge2 "falling" ?nth2 1 ?tol2 nil ?td2 nil ?stop nil ?multiple nil)		15.05p
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Sun Nov 17 21:36:31 2024 

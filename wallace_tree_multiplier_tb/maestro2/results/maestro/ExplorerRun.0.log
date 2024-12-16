@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Dec  4 21:38:51 2024 
+Best design point: 1
+Design specs: 
+	Project_wallace_tree_multiplier_tb_1	corner	Nominal - 
+	Delay_P8_1V0		1.395n
+	Delay_P8_1V1		1.425n
+	Delay_P8_1V2		1.446n
+	Energy_P8		609f
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Wed Dec  4 21:39:19 2024 

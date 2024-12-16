@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stimuliremovedset>
+    <namedstimuli>
+        <stimuliname>B</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A_first_half</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A_second_half</stimuliname>
+    </namedstimuli>
+</stimuliremovedset>

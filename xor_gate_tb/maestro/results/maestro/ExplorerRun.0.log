@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Nov 23 22:03:22 2024 
+Best design point: 1
+Design specs: 
+	Project_xor_gate_tb_1	corner	Nominal - 
+	tphl_B_rises_A_fix1		Error	No
+	tplh_B_falls_A_fix1		Error	No
+	tphh_B_rises_A_fix0		Error	No
+	tphh_B_falls_A_fix0		Error	No
+	tphl_A_rises_B_fix1		49.31p
+	tphl_A_falls_B_fix1		50.69p
+	tphh_A_rises_B_fix0		1.081n
+	tphh_A_falls_B_fix0		-980.7p
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Sat Nov 23 22:03:37 2024 

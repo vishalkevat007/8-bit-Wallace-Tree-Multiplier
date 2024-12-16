@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stimuliset>
+    <namedstimuli>
+        <stimuliname>Vdd</stimuliname>
+        <timeStamp>27/11/2024;9:11:38:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>dc</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vdc</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>FNpairs</cdfname>
+                <prompt>Number of noise/freq pairs</prompt>
+                <datatype>int</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>vdc</cdfname>
+                <prompt>DC voltage</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>Clk</stimuliname>
+        <timeStamp>27/11/2024;10:44:4:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>010101</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>1p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>1p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>1n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>Reset</stimuliname>
+        <timeStamp>02/12/2024;2:23:5:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>11000001</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>td</cdfname>
+                <prompt>Delay time</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>1p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>1p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>1n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A0</stimuliname>
+        <timeStamp>02/12/2024;2:25:30:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>01</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A1</stimuliname>
+        <timeStamp>02/12/2024;2:25:33:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>01</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A2</stimuliname>
+        <timeStamp>02/12/2024;2:25:36:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>01</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A3</stimuliname>
+        <timeStamp>02/12/2024;2:25:39:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>10</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A4</stimuliname>
+        <timeStamp>02/12/2024;2:25:42:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>11</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A5</stimuliname>
+        <timeStamp>02/12/2024;2:25:45:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>01</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A6</stimuliname>
+        <timeStamp>02/12/2024;2:25:48:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A7</stimuliname>
+        <timeStamp>02/12/2024;2:25:51:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B0</stimuliname>
+        <timeStamp>02/12/2024;2:25:54:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>11</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B1</stimuliname>
+        <timeStamp>02/12/2024;2:25:58:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B2</stimuliname>
+        <timeStamp>02/12/2024;2:26:2:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B3</stimuliname>
+        <timeStamp>02/12/2024;2:26:5:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>01</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B4</stimuliname>
+        <timeStamp>02/12/2024;2:26:8:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B5</stimuliname>
+        <timeStamp>02/12/2024;2:26:12:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B6</stimuliname>
+        <timeStamp>02/12/2024;2:26:14:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B7</stimuliname>
+        <timeStamp>02/12/2024;2:26:18:PM</timeStamp>
+        <simStopTime>1n</simStopTime>
+        <isourceResistorValue>1k</isourceResistorValue>
+        <libname></libname>
+        <srctype>bit</srctype>
+        <sourcetype>V</sourcetype>
+        <cdfinstname>vbit</cdfinstname>
+        <parameterset>
+            <parameter>
+                <cdfname>data</cdfname>
+                <prompt>Pattern Parameter data</prompt>
+                <datatype>string</datatype>
+                <value>00</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rptstart</cdfname>
+                <prompt>Pattern Parameter rptstart</prompt>
+                <datatype>string</datatype>
+                <value>1</value>
+                <defvalue>1</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>rpttimes</cdfname>
+                <prompt>Pattern Parameter rpttimes</prompt>
+                <datatype>string</datatype>
+                <value>-1</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>trigger</cdfname>
+                <prompt>Trigger</prompt>
+                <datatype>cyclic</datatype>
+                <value>Internal</value>
+                <defvalue>Internal</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>nPeriodicJitter</cdfname>
+                <prompt>Number of periodic jitters</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue>0</defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val1</cdfname>
+                <prompt>One value</prompt>
+                <datatype>string</datatype>
+                <value>1.1</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>val0</cdfname>
+                <prompt>Zero value</prompt>
+                <datatype>string</datatype>
+                <value>0</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tr</cdfname>
+                <prompt>Rise time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>tf</cdfname>
+                <prompt>Fall time</prompt>
+                <datatype>string</datatype>
+                <value>50p</value>
+                <defvalue></defvalue>
+            </parameter>
+            <parameter>
+                <cdfname>per</cdfname>
+                <prompt>Period</prompt>
+                <datatype>string</datatype>
+                <value>4n</value>
+                <defvalue></defvalue>
+            </parameter>
+        </parameterset>
+    </namedstimuli>
+</stimuliset>

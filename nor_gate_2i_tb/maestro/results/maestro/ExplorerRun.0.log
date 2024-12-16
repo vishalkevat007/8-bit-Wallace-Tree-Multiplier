@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Nov 12 20:56:26 2024 
+Best design point: 1
+Design specs: 
+	Project_nor_gate_2i_tb_1	corner	Nominal - 
+	tphl_B_rises_Out_falls		36.42p
+	tphl_b_falls_Out_rises		36.13p
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Tue Nov 12 20:56:39 2024 
