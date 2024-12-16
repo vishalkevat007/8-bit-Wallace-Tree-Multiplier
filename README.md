@@ -1,4 +1,5 @@
 Features:
+
 8-bit Wallace Tree Multiplier: Implemented using 4:2 compressors for partial product reduction and a final Carry Look-Ahead Adder to optimize the multiplication process.
 
 MAC Module: The MAC module integrates the Wallace Tree Multiplier with a Parallel Input Parallel Output (PIPO) shift register acting as an accumulator. The accumulator is designed using D Flip-Flops for efficient storage of each bit's value.
