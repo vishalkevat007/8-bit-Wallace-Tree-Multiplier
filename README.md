@@ -25,4 +25,4 @@ For a detailed explanation and documentation of the implementation, please refer
 
 1. Clone the repository:
    ```bash
-   https://github.com/vishalkevat007/8-bit-Wallace-Tree-Multiplier-and-MAC-Unit.git
+   git clone https://github.com/vishalkevat007/8-bit-Wallace-Tree-Multiplier-and-MAC-Unit.git
