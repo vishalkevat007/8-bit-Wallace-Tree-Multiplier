@@ -271,7 +271,7 @@ Additionally, the layout has successfully passed both LVS (Layout Versus Schemat
 
 ---
 
-## Summary of Results for Wallace Tree Multiplier
+## Summary of Results for MAC
 
 The simulation results for the MAC module are summarized in Table 3.
 
