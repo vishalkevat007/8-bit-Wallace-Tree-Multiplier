@@ -57,7 +57,7 @@ $$
 A_1 + A_2 + A_3 + A_4 + C_{in} = Sum + 2(Carry + C_{out})
 $$
 
-Here, $ Carry $ and $ C_{out} $ represent outputs with a significance of 1 bit higher than the five input bits $ A_1, A_2, A_3, A_4 $, and $ C_{in} $.
+Here, $Carry$ and $C_{out}$ represent outputs with a significance of 1 bit higher than the five input bits $A_1, A_2, A_3, A_4$, and $C_{in}$.
 
 ### Key Characteristics
 
@@ -168,7 +168,7 @@ Using our worst-case input pair having $A = 157$ and $B = 156$, we calculate the
 
 ### Layout and Total Area
 
-The layout of the Wallace tree multiplier circuit is shown in Fig.~\ref{wallace_layout}. The total area of our layout is approximately **1916.571525 $\mu m^2$**.
+The layout of the Wallace tree multiplier circuit is shown below. The total area of our layout is approximately **1916.571525 $\mu m^2$**.
 
 ![Layout of Wallace Tree Multiplier](./images/wallace_layout.jpg)
 
