@@ -47,7 +47,7 @@ Each block in the Partial Product Generator consists of an array of 8 AND gates,
 
 ## 4:2 Compressor Design
 
-A 4:2 compressor is a critical component in arithmetic circuits, particularly in multipliers, where it efficiently compresses multiple partial product bits. It takes four input bits $ A_1, A_2, A_3, A_4 $ and an additional carry input bit $ C_{in} $ from the previous column. It compresses these inputs to produce two outputs: $ Sum $ and $ Carry $, along with an intermediary carry bit $ C_{out} $. The intermediary $ C_{out} $ serves as the carry input $ C_{in} $ for the next column.
+A 4:2 compressor is a critical component in arithmetic circuits, particularly in multipliers, where it efficiently compresses multiple partial product bits. It takes four input bits $A_1$, $A_2$, $A_3$, $A_4$ and an additional carry input bit $C_{in}$ from the previous column. It compresses these inputs to produce two outputs: $Sum$ and $Carry$, along with an intermediary carry bit $C_{out}$. The intermediary $C_{out}$ serves as the carry input $C_{in}$ for the next column.
 
 ### Input-Output Relationship
 
@@ -57,11 +57,11 @@ $$
 A_1 + A_2 + A_3 + A_4 + C_{in} = Sum + 2(Carry + C_{out})
 $$
 
-Here, $Carry$ and $C_{out}$ represent outputs with a significance of 1 bit higher than the five input bits $A_1, A_2, A_3, A_4$, and $C_{in}$.
+Here, $Carry$ and $C_{out}$ represent outputs with a significance of 1 bit higher than the five input bits $A_1$, $A_2$, $A_3$, $A_4$, and $C_{in}$.
 
 ### Key Characteristics
 
-In contrast to a full adder, where both $ Sum $ and $ C_{out} $ are influenced by $ C_{in} $ from the previous stage, a 4:2 compressor decouples $ C_{out} $ from $ C_{in} $. This decoupling allows parallel computation of carry outputs, significantly reducing the overall propagation delay.
+In contrast to a full adder, where both $Sum$ and $C_{out}$ are influenced by $C_{in}$ from the previous stage, a 4:2 compressor decouples $C_{out} $ from $C_{in}$. This decoupling allows parallel computation of carry outputs, significantly reducing the overall propagation delay.
 
 
 ### Implementation
@@ -76,7 +76,7 @@ The circuit diagram is shown below:
 
 ### Interim Signals
 
-Two interim signals, $ S_i $ and $ Condition $, are calculated as follows:
+Two interim signals, $S_i$ and $Condition$, are calculated as follows:
 
 $$
 S_i = A_1 \oplus A_2 \oplus A_3
@@ -88,7 +88,7 @@ $$
 
 ### Output Expressions
 
-The outputs $ Sum $, $ Carry $, and $ C_{out} $ are derived using the following equations:
+The outputs $Sum$, $Carry$, and $C_{out}$ are derived using the following equations:
 
 1. **Sum**: 
    $$
@@ -108,8 +108,8 @@ The outputs $ Sum $, $ Carry $, and $ C_{out} $ are derived using the following 
 ### Optimization
 
 - **XOR Gate Reduction**: The design uses 3 XOR gates, improving efficiency over traditional designs with 4 XOR gates.
-- **MUX-Based Logic**: MUX logic optimizes the expressions for $ Sum $ and $ Carry $, reducing delay.
-- **Dual-Stage NAND Model**: A dual-stage NAND model is utilized for generating $ C_{out} $, further enhancing speed and area efficiency.
+- **MUX-Based Logic**: MUX logic optimizes the expressions for $Sum$ and $Carry$, reducing delay.
+- **Dual-Stage NAND Model**: A dual-stage NAND model is utilized for generating $C_{out}$, further enhancing speed and area efficiency.
 
 
 ## Carry Look-ahead Adder
@@ -124,7 +124,7 @@ $$
 G_i = A_i \cdot B_i
 $$
 
-These signals are used to generate the \(Sum\) and \(Carry\) for the CLA adder as given below:
+These signals are used to generate the \$Sum$ and $Carry$ for the CLA adder as given below:
 
 $$
 S_i = P_i \oplus C_i
@@ -141,7 +141,7 @@ The schematic of our Wallace tree multiplier as implemented in $Cadence~Virtuoso
 
 ![Wallace tree schematic](./images/wallace_schematic.jpg)
 
-To perform functional verification of our design, we have implemented a test bench circuit where the Wallace tree multiplier is powered with a $1.1~V$ supply, and all the outputs are connected to $2~fF$ capacitors. The rise/fall time of all the input bits is set to $50~ps$.
+To perform functional verification of our design, we have implemented a test bench circuit where the Wallace tree multiplier is powered with a $1.1 V$ supply, and all the outputs are connected to $2 fF$ capacitors. The rise/fall time of all the input bits is set to $50 ps$.
 
 The waveform for different input combinations and the corresponding outputs are shown in figure. We have verified our outputs for the input combinations.
 
@@ -152,7 +152,7 @@ The waveform for different input combinations and the corresponding outputs are 
 
 ### Worst Case Propagation Delay and Corresponding Input
 
-The propagation delay is measured for the time taken by the input to transition to 50% of $ V_{dd} $ to the time taken by the output to stabilize to 50% of $ V_{dd} $. The worst-case propagation delay depends on several factors like the critical path for the output signal, transistor sizing, layout implementation, parasitic capacitance and resistance extracted from the layout, interconnect capacitance and resistance, power supply, signal crosstalk, and so on.
+The propagation delay is measured for the time taken by the input to transition to 50% of $V_{dd}$ to the time taken by the output to stabilize to 50% of $V_{dd}$. The worst-case propagation delay depends on several factors like the critical path for the output signal, transistor sizing, layout implementation, parasitic capacitance and resistance extracted from the layout, interconnect capacitance and resistance, power supply, signal crosstalk, and so on.
 
 ![Worst Case Delay](./images/worst_case_delay.jpg) 
 
@@ -161,14 +161,14 @@ The maximum propagation delay of our Wallace tree multiplier arises from the out
 
 ### Energy Analysis
 
-Using our worst-case input pair having $A = 157$ and $B = 156$, we calculate the maximum energy consumption for our design, which comes out to be around $609.038~fJ$, as verified from below graph.
+Using our worst-case input pair having $A = 157$ and $B = 156$, we calculate the maximum energy consumption for our design, which comes out to be around **$609.038~fJ$**, as verified from below graph.
 
 ![Worst Case Delay](./images/worst_case_energy.jpg)
 
 
 ### Layout and Total Area
 
-The layout of the Wallace tree multiplier circuit is shown below. The total area of our layout is approximately **1916.571525 $\mu m^2$**.
+The layout of the Wallace tree multiplier circuit is shown below. The total area of our layout is approximately **$1916.571525~\mu m^2$**.
 
 ![Layout of Wallace Tree Multiplier](./images/wallace_layout.jpg)
 
@@ -186,7 +186,7 @@ A summary of our Energy-Delay-Area analysis is shown in Table 1.
 
 ### Variation of Energy and Delay with Power Supply
 
-By varying the supply voltage from $1~V$ to $1.2~V$, we have calculated the values of Energy, Delay, and Energy-Delay Product (EDP) as depicted in Table 2. From this table, we can see that EDP is minimum at $1.2~V$.
+By varying the supply voltage from $1 V$ to $1.2 V$, we have calculated the values of Energy, Delay, and Energy-Delay Product (EDP) as depicted in Table 2. From this table, we can see that EDP is minimum at $1.2~V$.
 
 
 | **Supply Voltage** ($V$) | **Energy** ($fJ$) | **Delay** ($ns$) | **EDP** ($ns × fJ$) |
