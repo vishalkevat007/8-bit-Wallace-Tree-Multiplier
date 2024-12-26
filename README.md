@@ -61,16 +61,14 @@ Here, $Carry$ and $C_{out}$ represent outputs with a significance of 1 bit highe
 
 ### Key Characteristics
 
-In contrast to a full adder, where both $Sum$ and $C_{out}$ are influenced by $C_{in}$ from the previous stage, a 4:2 compressor decouples $C_{out} $ from $C_{in}$. This decoupling allows parallel computation of carry outputs, significantly reducing the overall propagation delay.
+In contrast to a full adder, where both $Sum$ and $C_{out}$ are influenced by $C_{in}$ from the previous stage, a 4:2 compressor decouples $C_{out}$ from $C_{in}$. This decoupling allows parallel computation of carry outputs, significantly reducing the overall propagation delay.
 
 
 ### Implementation
 
-We have implemented the first design of the 4:2 compressor proposed by Priyadharshni et al. (2020). The circuit design minimizes the number of XOR gates to 3, compared to the 4 XOR gates used in traditional compressors. Additionally, 2:1 multiplexers (MUX), constructed using transmission gates, further reduce delay.
+We have implemented the first design of the 4:2 compressor proposed by Priyadharshni et al. [1]. The circuit design minimizes the number of XOR gates to 3, compared to the 4 XOR gates used in traditional compressors. Additionally, 2:1 multiplexers (MUX), constructed using transmission gates, further reduce delay.
 
 ### Circuit Diagram
-
-The circuit diagram is shown below:
 
 ![4:2 Compressor Circuit Diagram](./images/compressor_4_2.jpg)
 
@@ -91,16 +89,19 @@ $$
 The outputs $Sum$, $Carry$, and $C_{out}$ are derived using the following equations:
 
 1. **Sum**: 
+
    $$
    Sum = \overline{S_i}(A_4 \oplus C_{in}) + S_i(A_4 \odot C_{in})
    $$
 
 2. **Carry**:
+
    $$
    Carry = (A_4 \oplus C_{in}) C_{in} + (A_4 \odot C_{in}) S_i
    $$
 
 3. **Carry Out ($ C_{out} $)**:
+
    $$
    C_{out} = \overline{\overline{(A_1 A_2)} \cdot \overline{(A_2 A_3)} \cdot \overline{(A_1 A_3)}}
    $$
