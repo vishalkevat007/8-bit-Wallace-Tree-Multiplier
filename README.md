@@ -90,21 +90,21 @@ The outputs $Sum$, $Carry$, and $C_{out}$ are derived using the following equati
 
 1. **Sum**: 
 
-   $$
-   Sum = \overline{S_i}(A_4 \oplus C_{in}) + S_i(A_4 \odot C_{in})
-   $$
+$$
+Sum = \overline{S_i}(A_4 \oplus C_{in}) + S_i(A_4 \odot C_{in})
+$$
 
 2. **Carry**:
 
-   $$
-   Carry = (A_4 \oplus C_{in}) C_{in} + (A_4 \odot C_{in}) S_i
-   $$
+$$
+Carry = (A_4 \oplus C_{in}) C_{in} + (A_4 \odot C_{in}) S_i
+$$
 
-3. **Carry Out ($ C_{out} $)**:
+3. **Carry Out ($C_{out}$)**:
 
-   $$
-   C_{out} = \overline{\overline{(A_1 A_2)} \cdot \overline{(A_2 A_3)} \cdot \overline{(A_1 A_3)}}
-   $$
+$$
+C_{out} = \overline{\overline{(A_1 A_2)} \cdot \overline{(A_2 A_3)} \cdot \overline{(A_1 A_3)}}
+$$
 
 ### Optimization
 
