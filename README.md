@@ -45,7 +45,7 @@ The schematic of the 8-bit Wallace tree multiplier implemented using 4:2 compres
 
 The Partial Product Generator produces the partial product for each bit of the multiplier and the multiplicand using the AND operation. Using two 8-bit inputs, a total of 64 partial products are obtained, which are given as inputs to the proceeding circuits for partial product reduction. 
 
-![Partial Product Diagram](./images/partial_product.png)
+![Partial Product Diagram](./images/partial_product.jpg)
 
 Each block in the Partial Product Generator consists of an array of 8 AND gates, which generate the partial products from $A_i \cdot B_0$ to $A_i \cdot B_7$. We have used 8 such blocks to generate the partial products for all 64 combinations of the input bits.
 
@@ -208,10 +208,95 @@ By varying the supply voltage from $1 V$ to $1.2 V$, we have calculated the valu
 
 **Table 2:** Variation of energy and delay with power supply.
 
+---
+---
+---
+
+## Multiply and Accumulate Module
+
+A Multiply and Accumulate module (MAC) multiplies two numbers and adds the product to an accumulator. It consists of a multiplier, an adder, and an accumulator. The MAC unit is a fundamental block in computing devices, especially Digital Signal Processors (DSP) [4].
+
+We have implemented a MAC module using our Wallace tree multiplier, a 16-bit Carry Look-ahead adder, and a 17-bit Parallel Input Parallel Output (PIPO) shift register which works as an accumulator. The schematic of our MAC unit is shown below.
+
+![Schematic of MAC Unit](./images/mac_schematic.jpg)
+
+---
+
+## Accumulator
+
+We have designed the accumulator unit using a 17-bit Parallel Input Parallel Output (PIPO) shift register. The accumulator stores the output from the CLA adder (which includes 16 output bits and 1 carry bit) and sends it back to the CLA in the next clock cycle so that the new output from the multiplier can be added to the value present in the accumulator. The accumulator can also be set to 0 asynchronously using a $Reset$ pin.
+
+The value of each bit in the accumulator is stored using a D Flip-Flop. The schematic for the D Flip-Flop is adapted from [6] and is shown in below figure.
+
+![Schematic of D Flip-Flop](./images/D_FF.jpg)
+
+---
+
+## Functional Verification and Simulation Results
+
+The MAC unit is verified for different input combinations as shown in Figure 1. From this graph, we can see that when $Reset$ is 0, then at the rising edge of the $Clock$, the output of the multiplier gets added with the previous value stored in the accumulator, which is the output given by the MAC unit.
+
+![Graph showing functional verification of the MAC unit](./images/mac_func_ver.jpg)
+
+---
+
+## Latency, Energy and Area Analysis
+
+### Clock-to-Q Delay
+
+To calculate the Clock-to-Q delay of the MAC unit, we first store the highest output produced by the Wallace tree multiplier in the MAC, which is 65025, produced when the inputs $A$ and $B$ are both equal to 255. To this value, we add the output produced by the worst-case input pair, $A = 157$ and $B = 156$, for the Wallace tree multiplier. Hence, the output produced by the MAC is:
+
+$$
+65025 + (157 \times 156) = 89517
+$$
+
+The time taken by the MAC to produce this output after the rising edge of the clock gives the Clock-to-Q delay, which is **$850.85 ps$** as shown below.
+
+![Clock-to-Q Delay Measurement](./images/mac_delay.jpg)
+
+
+### Energy
+
+The energy of the MAC unit is calculated by integrating the current and voltage over the time interval starting when the Wallace tree produces a stable output to the point when the accumulator produces a stable output after the rising edge of the Clock. This is illustrated below. The total energy consumed for one MAC operation is **$1.297 pJ$**.
+
+![Energy Consumption of MAC Unit](./images/mac_energy.jpg)
+
+### Layout and Total Area
+
+The layout of our MAC unit is shown in Figure 1. The total area of the layout is **$2954.770250 μm²$**. 
+
+Additionally, the layout has successfully passed both LVS (Layout Versus Schematic) and DRC (Design Rule Check) validations, ensuring its correctness and manufacturability.
+
+![Layout of MAC Unit](./images/mac_layout.jpg)
+
+---
+
+## Summary of Results for Wallace Tree Multiplier
+
+The simulation results for the MAC module are summarized in Table 3.
+
+| **Parameter**       | **Value**     |
+|---------------------|---------------|
+| Clock-to-Q Delay    | $850.85~ps$   |
+| Energy Consumption  | $1.297~pJ$    |
+| Layout Area         | $2954.77~μm²$ |
+
+**Table 3:** Summary of Results for MAC Module
+
+---
+
+# Conclusion
+
+We have successfully demonstrated the implementation of an 8-bit Wallace tree multiplier and a corresponding Multiply and Accumulate (MAC) module. The Wallace tree multiplier efficiently performs multiplication by reducing partial products through hierarchical stages of half adders, full adders, and 4:2 compressors, followed by a final Carry Look-ahead Adder (CLA) to produce the result. 
+
+The MAC module combines this multiplier with an accumulator to enable repeated multiply-and-accumulate operations. The functionality of the designs was rigorously verified for various input combinations. Key implementation metrics, including area, worst-case delay, and energy consumption, were obtained to evaluate performance and efficiency.
+
+---
 
 # Report
 
 For a detailed explanation and documentation of the implementation, please refer to the [Project Report PDF](./Project_Report_EEE559.pdf).
+
 
 ---
 
@@ -229,6 +314,7 @@ For a detailed explanation and documentation of the implementation, please refer
 
 6. Sung, Guo-Ming, Chong-Cheng Huang, Xiong Xiao, and Shih-Ying Hsu. "10-Bit 5 MS/s Successive Approximation Register Analog-to-Digital Converter with a Phase-Locked Loop and Modified Bootstrapped Switch for a BLDC Motor Drive." *Electronics*, vol. 11, no. 4, 2022, p. 624. [MDPI](https://www.mdpi.com/2079-9292/11/4/624).
 
+---
 
 
 # Installation
