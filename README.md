@@ -34,13 +34,13 @@ The schematic of the 8-bit Wallace tree multiplier implemented using 4:2 compres
 
 ### Circuit Diagram
 
-![Wallace Tree Diagram](images\WallaceTree.jpg)
+![Wallace Tree Diagram](./images/WallaceTree.jpg)
 
 ## Partial Product Generator
 
 The Partial Product Generator produces the partial product for each bit of the multiplier and the multiplicand using the AND operation. Using two 8-bit inputs, a total of 64 partial products are obtained, which are given as inputs to the proceeding circuits for partial product reduction. 
 
-![Partial Product Diagram](images\partial_product.png)
+![Partial Product Diagram](./images/partial_product.png)
 
 Each block in the Partial Product Generator consists of an array of 8 AND gates, which generate the partial products from $A_i \cdot B_0$ to $A_i \cdot B_7$. We have used 8 such blocks to generate the partial products for all 64 combinations of the input bits.
 
@@ -72,7 +72,7 @@ We have implemented the first design of the 4:2 compressor proposed by Priyadhar
 
 The circuit diagram is shown below:
 
-![4:2 Compressor Circuit Diagram](images\compressor_4_2.jpg)
+![4:2 Compressor Circuit Diagram](./images/compressor_4_2.jpg)
 
 ### Interim Signals
 
@@ -139,13 +139,13 @@ $$
 ## Functional Verification and Simulation Results
 The schematic of our Wallace tree multiplier as implemented in $Cadence~Virtuoso$ is shown in below figure.
 
-![Wallace tree schematic](images\wallace_schematic.jpg)
+![Wallace tree schematic](./images/wallace_schematic.jpg)
 
 To perform functional verification of our design, we have implemented a test bench circuit where the Wallace tree multiplier is powered with a $1.1~V$ supply, and all the outputs are connected to $2~fF$ capacitors. The rise/fall time of all the input bits is set to $50~ps$.
 
 The waveform for different input combinations and the corresponding outputs are shown in figure. We have verified our outputs for the input combinations.
 
-![Wallace tree Functional Verification](images\wallace_func_ver.jpg) 
+![Wallace tree Functional Verification](./images/wallace_func_ver.jpg) 
 
 
 ## Latency, Energy and Area Analysys
@@ -154,7 +154,7 @@ The waveform for different input combinations and the corresponding outputs are 
 
 The propagation delay is measured for the time taken by the input to transition to 50% of $ V_{dd} $ to the time taken by the output to stabilize to 50% of $ V_{dd} $. The worst-case propagation delay depends on several factors like the critical path for the output signal, transistor sizing, layout implementation, parasitic capacitance and resistance extracted from the layout, interconnect capacitance and resistance, power supply, signal crosstalk, and so on.
 
-![Worst Case Delay](images\worst_case_delay.jpg) 
+![Worst Case Delay](./images/worst_case_delay.jpg) 
 
 The maximum propagation delay of our Wallace tree multiplier arises from the output bit $P(8)$ as shown clearly in above graph. We can also see from Wallace tree architecture that $P(8)$ occurs approximately in the middle of our Wallace tree architecture, hence it typically encounters the most number of carries and additions due to overlapping partial products. The bit $P(8)$ becomes high for the input $A = 157$ and $B = 156$. The maximum delay for this combination is $1.42482~ns$.
 
@@ -163,14 +163,14 @@ The maximum propagation delay of our Wallace tree multiplier arises from the out
 
 Using our worst-case input pair having $A = 157$ and $B = 156$, we calculate the maximum energy consumption for our design, which comes out to be around $609.038~fJ$, as verified from below graph.
 
-![Worst Case Delay](images\worst_case_energy.jpg)
+![Worst Case Delay](./images/worst_case_energy.jpg)
 
 
 ### Layout and Total Area
 
 The layout of the Wallace tree multiplier circuit is shown in Fig.~\ref{wallace_layout}. The total area of our layout is approximately **1916.571525 $\mu m^2$**.
 
-![Layout of Wallace Tree Multiplier](images\wallace_layout.jpg)
+![Layout of Wallace Tree Multiplier](./images/wallace_layout.jpg)
 
 Our layout has successfully passed DRC and LVS checks. After designing the layout, we perform parasitic extraction for energy and latency analysis.
 
