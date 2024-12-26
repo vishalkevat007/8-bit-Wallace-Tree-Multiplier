@@ -36,6 +36,8 @@ The schematic of the 8-bit Wallace tree multiplier implemented using 4:2 compres
 
 ![Wallace Tree Diagram](./images/WallaceTree.jpg)
 
+---
+
 ## Partial Product Generator
 
 The Partial Product Generator produces the partial product for each bit of the multiplier and the multiplicand using the AND operation. Using two 8-bit inputs, a total of 64 partial products are obtained, which are given as inputs to the proceeding circuits for partial product reduction. 
@@ -44,6 +46,7 @@ The Partial Product Generator produces the partial product for each bit of the m
 
 Each block in the Partial Product Generator consists of an array of 8 AND gates, which generate the partial products from $A_i \cdot B_0$ to $A_i \cdot B_7$. We have used 8 such blocks to generate the partial products for all 64 combinations of the input bits.
 
+---
 
 ## 4:2 Compressor Design
 
@@ -112,6 +115,7 @@ $$
 - **MUX-Based Logic**: MUX logic optimizes the expressions for $Sum$ and $Carry$, reducing delay.
 - **Dual-Stage NAND Model**: A dual-stage NAND model is utilized for generating $C_{out}$, further enhancing speed and area efficiency.
 
+---
 
 ## Carry Look-ahead Adder
 
@@ -148,8 +152,9 @@ The waveform for different input combinations and the corresponding outputs are 
 
 ![Wallace tree Functional Verification](./images/wallace_func_ver.jpg) 
 
+---
 
-## Latency, Energy and Area Analysys
+## Latency, Energy and Area Analysis
 
 ### Worst Case Propagation Delay and Corresponding Input
 
@@ -174,6 +179,8 @@ The layout of the Wallace tree multiplier circuit is shown below. The total area
 ![Layout of Wallace Tree Multiplier](./images/wallace_layout.jpg)
 
 Our layout has successfully passed DRC and LVS checks. After designing the layout, we perform parasitic extraction for energy and latency analysis.
+
+---
 
 ## Summary of Results for Wallace Tree Multiplier
 
