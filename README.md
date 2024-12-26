@@ -17,6 +17,8 @@ The project aims to provide a high-speed and energy-efficient implementation of 
 - **45nm CMOS technology**
 - **Cadence Virtuoso** for schematic design and simulation and layout
 
+---
+
 ## Topology selection for different circuit elements
 
 We have used $45~nm$ CMOS technology to implement the primitive gates. Additionally, we have used CMOS as well as transmission based logic to based design our ciruits as explained below. 
@@ -27,6 +29,7 @@ The primitive gates like NAND, NOR and NOT are designed using standard CMOS logi
 - **XOR gate and 2:1 Multiplexer**
 The XOR gate and 2:1 MUX are designed using transmission gates since they require fewer number of transistors as compared to CMOS based logic. Additionally, transmission gates have minimal leakage and static power dissipation during steady states. Hence, we have used transmission based design for XOR and 2:1 MUX.
 
+---
 
 ## 8-bit Wallace Tree Multiplier Architecture
 
